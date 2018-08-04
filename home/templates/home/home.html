@@ -42,16 +42,17 @@ cursor: pointer;
 <br>
 
 
-<body style="background-color:black;">
+<body style="background-color:Black;">
 <div class="col-sm-4"></div>
 <div class="col-sm-4">
 <center>
-<h1 style=" 30px; color:grey">Enter your name</h1>
-<p><input type="text" style="text-align:center; width:350px; height:35px" name="name" required></p>
-<p>Play the game of Eidolon</p>
-<p></p>
-<p><button class="button button5">CONTINUE</button></p>
-
+<h1 style=" font-size:31px; color:grey">First name and initials</h1>
+<form method="post">
+  <p><input type="text" style="text-align:center; width:250px; height:35px" name="name" required>
+  <input type="text" maxlength="2" style="text-align:center; width:50px; height:35px; text-transform:uppercase;" name="initials" required></p>
+  <p><input type="radio" name="terms" value="accept" required> I agree to the terms and conditions</p>
+  <p><input type="submit" class="button button5" value="CONTINUE"></p>
+</form>
 </center>
 </div>
 </body>
